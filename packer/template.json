@@ -18,7 +18,7 @@
   "provisioners": [
     {
       "type": "shell",
-      "inline": ["mkdir -p /etc/ansible/roles"]
+      "inline": ["sudo mkdir -p /etc/ansible/roles"]
     },
     {
       "type": "file",
