@@ -18,7 +18,7 @@
   "provisioners": [
     {
       "type": "file",
-      "source": "{{template_dir}}/ansible-role-hardening-1.14.0",
+      "source": "{{template_dir}}../ansible-role-hardening-1.14.0",
       "destination": "/etc/ansible/roles/konstruktoid.hardening"
     },
     {
