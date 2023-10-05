@@ -22,6 +22,11 @@
       "destination": "/etc/ansible/roles/konstruktoid.hardening"
     },
     {
+      "type": "file",
+      "source": "{{template_dir}}/playbook.yml",
+      "destination": "/home/ubuntu/playbook.yml"
+    },
+    {
       "type": "shell",
       "script": "deploy.sh"
     }
