@@ -1,0 +1,14 @@
+*.deb
+*.html
+*.log
+*.retry
+*.rpm
+*suid.list
+.cache
+.scannerwork
+.sonar
+.tox
+.vagrant
+.yamllint
+drafts/*
+hosts

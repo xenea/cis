@@ -1,0 +1,29 @@
+{
+  "builders": [
+    {
+      "type": "googlecompute",
+      "project_id": "prj-trusted-usr-access36",
+      "account_file": "/opt/prj-trusted-usr-access36-99336ac6a5f9.json",
+      "source_image_family": "ubuntu-2204-lts",
+      "image_name": "nw18-base-image-ubuntu2204-v1.0",
+      "zone": "asia-south1-a",
+      "network": "vpc-trusted-usr-access-host",
+      "subnetwork": "sb-as1-trusted-host-01",
+      "ssh_username": "ubuntu",
+      "omit_external_ip": true,
+      "use_internal_ip": true,
+      "tags": "ssh"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "{{template_dir}}/ansible-role-hardening-1.14.0",
+      "destination": "/etc/ansible/roles/konstruktoid.hardening"
+    },
+    {
+      "type": "shell",
+      "script": "deploy.sh"
+    }
+  ]
+}
