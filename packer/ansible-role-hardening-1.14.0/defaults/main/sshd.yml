@@ -1,9 +1,9 @@
 ---
 sshd_accept_env: LANG LC_*
 sshd_admin_net:
+  - 0.0.0.0/32
   - 192.168.0.0/24
   - 192.168.1.0/24
-  - 0.0.0.0/32
 sshd_allow_agent_forwarding: "no"
 sshd_allow_groups: sudo
 sshd_allow_users: "{{ ansible_user }}"
@@ -60,7 +60,7 @@ sshd_max_sessions: 3
 sshd_max_startups: 10:30:60
 sshd_password_authentication: "no"
 sshd_permit_empty_passwords: "no"
-sshd_permit_root_login: "no"
+sshd_permit_root_login: "yes"
 sshd_permit_user_environment: "no"
 sshd_port: 22
 sshd_print_last_log: "yes"
