@@ -8,6 +8,7 @@
       "image_name": "nw18-base-image-ubuntu2204-v1",
       "zone": "asia-south1-a",
       "region": "asia-south1",
+      "image_storage_locations": ["asia-south1"],
       "network": "vpc-trusted-usr-access-host",
       "subnetwork": "sb-as1-trusted-host-01",
       "ssh_username": "ubuntu",
