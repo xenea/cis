@@ -1,3 +1,4 @@
 ---
-umask_value: "077"
+# umask_value: "077"
+umask_value: "002"
 umask_default_value: "002"
