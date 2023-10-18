@@ -1,7 +1,6 @@
 # Packer-custom-image
 Packer Script to create custom Image using ansible  
 
-
 link : https://developer.hashicorp.com/packer/downloads
 
 # Requirement
