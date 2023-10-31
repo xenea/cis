@@ -5,7 +5,7 @@
       "project_id": "prj-trusted-usr-access36",
       "account_file": "/opt/prj-trusted-usr-access36-99336ac6a5f9.json",
       "source_image_family": "ubuntu-2204-lts",
-      "image_name": "nw18-base-image-ubuntu2204-v2",
+      "image_name": "nw18-base-image-ubuntu2204-v3",
       "zone": "asia-south1-a",
       "region": "asia-south1",
       "image_storage_locations": ["asia-south1"],
